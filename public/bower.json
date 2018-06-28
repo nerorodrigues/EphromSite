@@ -1,0 +1,17 @@
+{
+  "name": "Ephrom",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "2.3.2",
+    "backbone": "~1.1.0"
+  }
+}

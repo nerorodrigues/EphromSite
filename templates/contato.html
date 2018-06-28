@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+  <div class="container-group-light-gray">
+    <hr class="spacer spacer-md">
+    <div class="container">
+      <a id="contato"></a>
+      <form class="form-horizontal" id="form-email">
+        <div class="control-group">
+          <label class="control-label" for="inputNome">Nome<span>*</span></label>
+          <div class="controls">
+            <input type="text" id="inputNome" name="nome">
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="inputEmail">E-mail<span>*</span></label>
+          <div class="controls">
+            <input type="text" id="inputEmail" name="email">
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="inputEmpresa">Empresa<span>*</span></label>
+          <div class="controls">
+            <input type="text" id="inputEmpresa" name="empresa">
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="inputCargo">Cargo<span>*</span></label>
+          <div class="controls">
+            <input type="text" id="inputCargo" name="cargo">
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="inputMensagem">Mensagem<span>*</span></label>
+          <div class="controls">
+            <textarea id="inputMensagem" name="mensagem"></textarea>
+          </div>
+        </div>            
+        <div class="control-group">
+          <div class="controls">
+            <button id="btn-enviar" class="btn" type="submit">Enviar</button>
+          </div>
+        </div>
+      </form>
+      <p>&nbsp;</p>
+      <p>Você também pode entrar em contato pelo e-mail: <strong><a href="mailto:contato@ephrom.com.br">contato@ephrom.com.br</a></strong></p>
+      <p>Ou por telefone: <strong>+55 (62) 3250-6100</strong></p>
+      <p>&nbsp;</p>
+      <p>Av C 255 esq. C 256, Qd. 600, Nº 400, Sala 1112<br>
+        Ed. Eldorado Business Tower, Setor Nova Suíça<br>
+        Goiânia-GO, CEP: 74.280-010
+      </p>
+
+    </div>
+    <hr class="spacer spacer-md">
+  </div>
+  
+{% endblock %}

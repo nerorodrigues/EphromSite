@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">  
+  <title>Ephrom</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <script src="bower_components/jquery/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/docs/assets/js/bootstrap.min.js"></script>
+  <script src="js/init.js"></script>
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/docs/assets/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/docs/assets/css/bootstrap-responsive.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  
+  <div class="banner-top">
+    <img class="img-lamp" src="img/lampada.png">
+    <div class="container">
+      <div class=" container-logo">
+        <div class="container-btn pull-right">
+          <button id="btn-menu" type="button" class="btn-menu dropdown-toggle" data-toggle="dropdown">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="btn-menu">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="/historico">Histórico</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="/missao">Missão</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="/#talkprocess">Produtos</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="/contato">Contato</a></li>
+          </ul>
+        </div>
+
+        <a href="/"><img class="logo pull-right" src="img/logo-completa.png"></a>
+      </div>
+    </div>
+      <div class="gray-men">
+        <img id="man7" class="gray-man" src="img/gray-man-l.png">
+        <img id="man6" class="gray-man" src="img/gray-man-r.png">
+        <img id="man5" class="gray-man" src="img/gray-man-l.png">
+        <img id="man4" class="gray-man" src="img/gray-man-r.png">
+        <img id="man3" class="gray-man" src="img/gray-man-r.png">
+        <img id="man8" class="gray-man" src="img/gray-man-r.png">
+        <img id="man2" class="gray-man" src="img/gray-man-l.png">
+        <img id="man1" class="gray-man" src="img/gray-man-r.png">
+      </div>
+      <div class="container banner-caption">
+        <h2>Innovation is our Business</h2>
+      </div>
+    <img class="orange-man" src="img/orange-man-single.png">
+  </div>
+
+  {% block body %}
+  {% endblock %}
+
+  <footer class="container-group-dark-gray" style="margin-bottom: 0;">
+    <hr class="spacer spacer-md">
+    <div class="container">
+      <div class="row-fluid">
+        <div class="span4">
+          <ul>
+            <li><a href="#">Top</a></li>
+            <li><a href="/#convergencia">Convergência Organizacional</a></li>
+            <li><a href="/#talkprocess">TalkProcess</a></li>
+          </ul>
+        </div>
+        <div class="span4">          
+          <ul>
+            <li><a href="missao">Missão</a></li>
+            <li><a href="historico">Histórico</a></li>
+            <!--<li><a href="#inovacao">Como Inovamos</a></li>-->
+          </ul>
+        </div>
+        <hr class="visible-phone">
+        <div class="span4" style="text-align: center;">
+          <p><img src="img/logo-completa.png" style="width: 170px;"></p>
+          <p><a href="#">© <script type="text/javascript">document.write((new Date()).getFullYear())</script>, Ephrom</a></p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>Contact us by</p>
+          <p><a href="mailto:contato@ephrom.com.br">contato@ephrom.com.br</a></p>
+        </div>
+      </div>
+    </div>
+    <hr class="spacer spacer-md">
+  </footer>
+</body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-41239286-4', 'ephrom.com');
+  ga('send', 'pageview');
+</script>
+</html>

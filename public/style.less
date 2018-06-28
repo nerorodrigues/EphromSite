@@ -1,0 +1,409 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300);
+
+body {
+  font-family: "open sans";
+  color: #7b7b7b;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+h3 {
+  font-size: 26px;
+  font-weight: normal;
+}
+
+hr.spacer {
+  border: none;
+  margin: 0;
+}
+
+hr.spacer.spacer-lg {
+  height: 100px;
+}
+
+hr.spacer.spacer-md {
+  height: 50px;
+}
+
+hr.spacer.spacer-sm {
+  height: 20px;
+}
+
+
+.gray-men-positions(@addLeftMan: 0, @addTopMan: 0, @addDistMan: 0) {
+  width: 360px + @addDistMan * 7;
+      
+  #man1 {
+    left: 0px + @addLeftMan;
+    top: 86px + @addTopMan;
+  }
+  #man2 {
+    left: 44px + @addLeftMan + @addDistMan;
+    top: 38px + @addTopMan;
+  }
+  @addDistMan1: @addDistMan + @addDistMan;
+  #man3 {
+    left: 85px + @addLeftMan + @addDistMan1;
+    top: 115px + @addTopMan;
+  }
+  @addDistMan2: @addDistMan1 + @addDistMan;
+  #man4 {
+    left: 101px + @addLeftMan + @addDistMan2;
+    top: 5px + @addTopMan;
+  }
+  @addDistMan3: @addDistMan2 + @addDistMan;
+  #man5 {
+    left: 151px + @addLeftMan + @addDistMan3;
+    top: 48px + @addTopMan;
+  }
+  @addDistMan4: @addDistMan3 + @addDistMan;
+  #man6 {
+    left: 196px + @addLeftMan + @addDistMan4;
+    top: 120px + @addTopMan;
+  }
+  @addDistMan5: @addDistMan4 + @addDistMan;
+  #man7 {
+    left: 234px + @addLeftMan + @addDistMan5;
+    top: 0px + @addTopMan;
+  }
+  @addDistMan6: @addDistMan5 + @addDistMan;
+  #man8 {
+    left: 304px + @addLeftMan + @addDistMan6;
+    top: 41px + @addTopMan;
+  }
+}
+
+.banner-top {
+  width: 100%;
+  height: 550px;
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .container-logo {
+    margin-top: 30px;
+    .logo {
+        margin-bottom: 20px;
+    }
+    .container-btn {
+      position: relative;
+      .btn-menu {
+        background: none;
+        border: none;
+        margin: 10px 0 0 30px;
+        border-radius: 4px;
+        span {
+          display: block;
+          width: 30px;
+          height: 3px;
+          background-color: #A0A0A0;
+          border-radius: 2px;
+          box-shadow: 0 1px 0 rgba(172, 172, 172, 0.25);
+          margin-top: 7px;
+        }
+        span:last-child {
+          margin-bottom: 7px;
+        }
+        &:hover {
+          background-color: #ECEBE3;
+        }
+      }
+    }
+  }
+
+  .img-lamp {
+    position: absolute; 
+    z-index: -1;
+  }
+
+  .gray-men {
+    position: relative;
+    margin: 0 auto;
+    height: 1px;
+  
+    .gray-men-positions(50, 0, 30);
+
+    .gray-man {
+      height: 150px;
+      position: absolute;
+    }
+  }
+  .banner-caption {
+    margin-top: 216px;
+    /*text-align: right;*/
+
+    h2 {
+      // max-width: 400px;
+      padding: 100px 0 0 350px;
+    }
+  }
+  .orange-man {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+}
+
+.btn-more {
+  background: none; 
+  border: none;
+  color: #0088cc;
+}
+
+.btn-expanded > img {
+  -webkit-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+}
+
+.more-text {
+  overflow: hidden;
+  height: auto;
+  max-height: 1px;
+  transition: max-height 1.0s;
+}
+
+.more-text-show {
+  max-height: 1000px;
+}
+
+.container-group-dark-gray {
+  background-color: #292824;
+  color: white;
+}
+
+.container-group-light-gray {
+  background-color: #ECEBE3;
+}
+
+.featurette {
+  overflow: hidden;
+}
+
+.featurette-image.pull-left {
+  margin-right: 40px;
+}
+
+.featurette-image.pull-right {
+  margin-left: 40px;
+}
+
+.containder-group-talk {
+  background-image: url('img/fundo-talk.png');
+  position:relative;
+  min-height: 470px;
+
+  .people-talk {
+    position:absolute;
+    top: 0;
+    right: 0;
+  }
+  .div-image-talk {
+    width: 320px;
+    height: 370px;
+  }
+  .people-talk-inner {
+    display: none;
+  }
+}
+
+footer a {
+  color: #A3A3A3;
+}
+
+footer a:hover {
+  color: #7B7B7B;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+footer ul > li {
+  font-size: 18px;
+  line-height: 2;
+  list-style: none;
+}
+
+@media (max-width: 1550px) {
+  .banner-top {
+
+    .gray-men {
+      .gray-men-positions(170, 0, 15);
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .banner-top {
+
+    .gray-men {
+      .gray-men-positions(180, 10, 5);
+    }
+
+   .banner-caption {
+      h2 {
+        max-width: 400px;
+        padding-top: 70px;
+      }
+    }
+    .orange-man {
+      width: 190px;
+    }
+  }
+}
+
+@media (max-width: 979px) {
+  .banner-top {
+
+    .img-lamp {
+      opacity: 0.1;
+    }
+
+    .gray-men {
+      .gray-men-positions(0, 20, 15);
+    }
+
+    .banner-caption {
+      h2 {
+        max-width: none;
+        padding: 120px 0 0 0;
+      }
+    }
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  hr.spacer.spacer-lg {
+    height: 75px;
+  }
+
+  hr.spacer.spacer-md {
+    height: 37px;
+  }
+
+  hr.spacer.spacer-sm {
+    height: 15px;
+  }
+}
+
+@media (max-width: 767px) {  
+  .banner-top {
+    .container-logo {
+      margin-top: 50px;
+      .logo {
+        width: 200px;
+      }
+      .container-btn {
+        .btn-menu {
+          margin-top: 7px;
+        }
+      }
+    }
+
+    .banner-caption {
+      h2 {
+        max-width: 400px;
+        padding: 90px 0 0 0;
+      }
+    }
+
+    .orange-man {
+      width: 170px;
+    }
+  }
+
+  body {
+    padding: 0;
+  }
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  hr.spacer.spacer-lg {
+    height: 40px;
+  }
+
+  hr.spacer.spacer-md {
+    height: 20px;
+  }
+
+  hr.spacer.spacer-sm {
+    height: 10px;
+  }
+}
+
+@media (max-width: 616px) {
+  .banner-top {
+    height: 470px;
+
+    .img-lamp {
+      bottom: 0;
+      width: 190px;
+    }
+
+    .container-logo {
+      margin: 0 auto;
+      display: table;
+
+      .logo {
+        float: none;
+        margin-top: 10px;
+      }
+      .container-btn {
+        .btn-menu {
+          margin-top: 17px;
+        }
+      }
+    }
+
+    .gray-men {
+      .gray-man {
+        height: 120px;
+        opacity: 0.5;
+      }
+      
+      .gray-men-positions(0, 20, -10);
+    }
+
+    .banner-caption {
+      margin-top: 100px;
+      h2 {
+        padding-top: 0px;
+        max-width: none;
+        position: relative;
+      }
+    }
+    .orange-man {
+      width: 140px;
+    }
+  }
+
+  .containder-group-talk {
+    // background-image: none;
+    min-height: auto;
+
+    .people-talk {
+      display: none;
+    }
+    .div-image-talk {
+      display: none;
+    }
+    .people-talk-inner {
+      display: block;
+    }
+  }
+}

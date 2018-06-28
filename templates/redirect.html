@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var redirect = function(){
+			if(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(window.navigator.userAgent)){
+				window.location.href = "/workshops/{{page}}/mobile/{{codigo}}";
+			}else{
+				window.location.href = "/workshops/{{page}}/desktop/{{codigo}}";
+			}
+		}();
+	</script>
+</head>
+<body>
+</body>
+</html>
